@@ -39,33 +39,33 @@ public class ArbolBinario<T extends Comparable<T>> {
 			peso++;
 		}		
 	}
-	  private void insertar(Nodo antiguo, Nodo nuevoNodo) {
-        if (nuevoNodo.getPadre().getCodigo() < antiguo.getPadre().getCodigo()) {
-            if (antiguo.getIzquierdo() == null) {
-                antiguo.setIzquierdo(nuevoNodo);
-            } else {
-                //utilizo recursividad
-                insertar(antiguo.getIzquierdo(), nuevoNodo);
-            }
-        } else {
-    
-            if (antiguo.getDerecho() == null) {
-                antiguo.setDerecho(nuevoNodo);
-            } else {
-                insertar(antiguo.getDerecho(), nuevoNodo);
-            }
-        }
-        }
-   
-    public void insertarEstudiante(Estudiante estudiante) {
-        Nodo nuevoNodo = new Nodo(estudiante);
-        if (raiz == null) {
-            raiz = nuevoNodo;
-        } else {
-            //llamo el metodo insertar para que me agrege al lado que es 
-            insertar(raiz, nuevoNodo);
-        }
-    }
+//	  private void insertar(Nodo antiguo, Nodo nuevoNodo) {
+//        if (nuevoNodo.getPadre().getCodigo() < antiguo.getPadre().getCodigo()) {
+//            if (antiguo.getIzquierdo() == null) {
+//                antiguo.setIzquierdo(nuevoNodo);
+//            } else {
+//                //utilizo recursividad
+//                insertar(antiguo.getIzquierdo(), nuevoNodo);
+//            }
+//        } else {
+//    
+//            if (antiguo.getDerecho() == null) {
+//                antiguo.setDerecho(nuevoNodo);
+//            } else {
+//                insertar(antiguo.getDerecho(), nuevoNodo);
+//            }
+//        }
+//        }
+//   
+//    public void insertarEstudiante(Estudiante estudiante) {
+//        Nodo nuevoNodo = new Nodo(estudiante);
+//        if (raiz == null) {
+//            raiz = nuevoNodo;
+//        } else {
+//            //llamo el metodo insertar para que me agrege al lado que es 
+//            insertar(raiz, nuevoNodo);
+//        }
+//    }
 	/**
 	 * Realiza el recorrido inorden en el árbol binario
 	 */

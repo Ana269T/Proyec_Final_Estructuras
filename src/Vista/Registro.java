@@ -351,6 +351,8 @@ public class Registro extends javax.swing.JFrame {
         if (estudianteEncontrado != null) {
             System.out.println("Estudiante encontrado: " + estudianteEncontrado.getNombres());
         } else {
+            
+            
             System.out.println("Estudiante no encontrado");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
