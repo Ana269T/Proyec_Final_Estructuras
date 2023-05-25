@@ -383,6 +383,8 @@ public class ArbolBinario<T extends Comparable<T>> {
 		cola.add(aux);
 		int cont = 0;
 		
+                
+                
 		while(!cola.isEmpty()) {
 			
 			Nodo<T> primero = cola.poll();
